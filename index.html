@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum JavaScript</title>
+</head>
+<body>
+    <h1>Pengenalan JavaScript</h1>
+    <p id="pesan">Konten awal.</p>
+
+<label for="bilangan">Masukkan bilangan bulat:</label> 
+<input type="number" id="bilangan" step="1"> 
+<button type="button" onclick="cekBilangan()">Periksa</button> 
+<p id="hasilBilangan"></p>
+
+<button type="button" onclick="ubahWarnaLatar('lightgreen')">Latar Hijau</button> 
+<button type="button" onclick="ubahWarnaLatar('white')">Latar Putih</button> 
+<button type="button" onclick="ubahWarnaLatar('lightyellow')">Latar Kuning</button>
+
+<h3>Daftar Menu Makanan</h3> 
+<label><input type="checkbox" class="menu" value="5000"> Ayam Goreng — Rp5.000</label><br> 
+<label><input type="checkbox" class="menu" value="500"> Tempe — Rp500</label><br> 
+<label><input type="checkbox" class="menu" value="2500"> Telur Dadar — Rp2.500</label><br> 
+<p>Total: Rp<span id="total">0</span></p>
+
+
+<hr>
+
+<h3>Mini Project - Kalkulator Nilai Mahasiswa</h3>
+
+<label for="tugas">Nilai Tugas:</label>
+<input type="number" id="tugas" min="0" max="100">
+<br><br>
+
+<label for="uts">Nilai UTS:</label>
+<input type="number" id="uts" min="0" max="100">
+<br><br>
+
+<label for="uas">Nilai UAS:</label>
+<input type="number" id="uas" min="0" max="100">
+<br><br>
+
+<button type="button" onclick="prosesNilai()">
+    Hitung Nilai
+</button>
+
+<p id="hasilNilai"></p>
+
+    <hr>
+
+    <!-- G. EKSPERIMEN MANDIRI NOMOR 1 -->
+    <h3>Nomor 1 - Operasi Dua Nilai dari Prompt</h3>
+    <p>Masukkan dua nilai untuk melakukan operasi dasar.</p>
+    <button onclick="eksperimenOperasi()">Masukkan Dua Nilai</button>
+    <p id="hasilOperasi"></p>
+
+    <hr>
+
+    <!-- G. EKSPERIMEN MANDIRI NOMOR 7 -->
+    <h3>Nomor 7 - Tabel Perkalian Angka 7</h3>
+    <button onclick="tampilkanTabel()">Tampilkan Tabel Perkalian</button>
+    <p id="hasilTabel"></p>
+
+    <hr>
+
+    <!-- G. EKSPERIMEN MANDIRI NOMOR 8 -->
+    <h3>Nomor 8 - Function Cek Genap</h3>
+    <label for="angkaGenap">Masukkan angka:</label>
+    <input type="number" id="angkaGenap" step="1">
+    <button onclick="ujiGenap()">Periksa</button>
+    <p id="hasilGenap"></p>
+
+    <hr>
+
+    <!-- G. EKSPERIMEN MANDIRI NOMOR 9 -->
+    <h3>Nomor 9 - Validasi Form</h3>
+    <p>Nama wajib diisi dan nilai harus berada di antara 0 sampai 100.</p>
+
+    <form id="formValidasi">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama">
+        <br><br>
+
+        <label for="nilai">Nilai:</label>
+        <input type="number" id="nilai">
+        <br><br>
+
+        <button type="submit">Validasi Data</button>
+    </form>
+
+    <p id="hasilValidasi"></p>
+
+    <hr>
+
+    <!-- G. EKSPERIMEN MANDIRI NOMOR 10 -->
+    <h3>Nomor 10 - Menambah Pilihan Menu dan Harga</h3>
+    <p>Pilih satu atau beberapa menu berikut.</p>
+
+    <label>
+        <input type="checkbox" class="menuTambahan" value="3000">
+        Es Teh - Rp3.000
+    </label>
+    <br>
+
+    <label>
+        <input type="checkbox" class="menuTambahan" value="4000">
+        Roti Bakar - Rp4.000
+    </label>
+    <br>
+
+    <p>Total menu tambahan: <strong id="totalMenuTambahan">Rp0</strong></p>
+
+    <hr>
+
+    <!-- G. EKSPERIMEN MANDIRI NOMOR 11 -->
+    <h3>Nomor 11 - Menyembunyikan dan Menampilkan Elemen</h3>
+    <p id="pesanToggle">Ini adalah elemen HTML yang dapat disembunyikan.</p>
+    <button onclick="togglePesan()">Sembunyikan / Tampilkan</button>
+
+    <hr>
+
+    <!-- FILE JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
